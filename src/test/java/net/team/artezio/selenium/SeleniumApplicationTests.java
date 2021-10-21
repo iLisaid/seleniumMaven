@@ -11,7 +11,7 @@ public class SeleniumApplicationTests {
 
     @Before
     public void setUp(){
-        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "chromedriver");
         driver = new ChromeDriver();
     }
 
