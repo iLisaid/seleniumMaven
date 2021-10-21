@@ -3,5 +3,5 @@ WORKDIR /opt
 RUN mkdir -p selenium
 WORKDIR /opt/selenium
 COPY . /opt/selenium
-USER root
+RUN chmod +x  /opt/selenium/mvnw
 ENTRYPOINT ["/opt/selenium/mvnw", "test"]
